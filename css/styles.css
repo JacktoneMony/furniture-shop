@@ -8,11 +8,25 @@
     color: azure;
   }
 
+  .navbar-brand{
+    color: white;
+  }
+
   .navbar .nav-link {
     /* color: #fff !important; */
     position: sticky;
     color: azure;
     /* background-color: blue; */
+  }
+
+  .btn-purple{
+    background-color: rgb(27, 21, 114);
+    color:white;
+  }
+
+  .btn-outline-purple{
+    background-color: white;
+    color:#63a3f1;
   }
 
   .find-stuff{
@@ -291,3 +305,102 @@
       margin-top: -58.59px;
     }
   }
+
+  /* Custom responsive styles */
+.search-card .input-group {
+  transition: all 0.3s ease;
+}
+
+.search-card .input-group-text {
+  min-width: 45px;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.search-card .form-select {
+  border-left: 0;
+  padding-left: 0;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 767.98px) {
+  .search-card .card {
+      padding: 1.5rem !important;
+  }
+
+  .search-card .col-md-6 {
+      margin-bottom: 1rem;
+  }
+
+  .search-card .input-group-text {
+      min-width: 40px;
+      padding: 0.5rem;
+  }
+
+  .search-card .form-select {
+      font-size: 0.9rem;
+  }
+
+  .search-card .fa-magnifying-glass {
+      font-size: 1rem;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .search-card .form-select {
+      font-size: 0.95rem;
+  }
+
+  .search-card .input-group-text i {
+      font-size: 1.1rem;
+  }
+}
+
+/* Hover effects */
+.search-card .input-group:hover .input-group-text {
+  background-color: #e9ecef;
+}
+
+.search-card .input-group-text:hover {
+  background-color: #dee2e6 !important;
+}
+
+/* Focus states */
+.search-card .form-select:focus {
+  box-shadow: none;
+  border-color: #ced4da;
+}
+
+.search-card .input-group:focus-within .input-group-text {
+  background-color: #e9ecef;
+  border-color: #ced4da;
+}
+
+/* Magnifying glass specific styling */
+.search-card .fa-magnifying-glass {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.search-card .fa-magnifying-glass:hover {
+  transform: scale(1.1);
+}
+
+/* Ensure equal height for input groups */
+.search-card .input-group > .form-select,
+.search-card .input-group > .input-group-text {
+  height: 45px;
+}
+
+/* Responsive spacing adjustments */
+@media (max-width: 575.98px) {
+  .search-card .row.g-3 {
+      gap: 1rem !important;
+  }
+  
+  .search-card .input-group > .form-select {
+      font-size: 0.85rem;
+  }
+}
