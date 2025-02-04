@@ -9,6 +9,10 @@
     color: black;
     /* background-color: blue; */
   }
+
+  .find-stuff{
+    font-weight: bold;
+  }
 /* 
 
   .center-stuff{
@@ -211,8 +215,9 @@
   .search-card{
     background-color: aqua;
     height: 70px;
-    border-radius: 40px;
+    border-radius: 70px;
     align-items: center;
+    justify-content: center;
   }
   .subscribe-box {
     background-color: #0066e0; /* Primary blue */
