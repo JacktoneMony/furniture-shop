@@ -69,6 +69,7 @@
     background-color: #0d6efd; /* Bootstrap primary color */
     z-index: 1;
     padding-left: 100px; /*ntaeka media query*/
+    color: white;
 }
 
  .stat-column {
