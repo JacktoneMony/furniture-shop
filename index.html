@@ -90,15 +90,15 @@
   <div class="container mt-5">
     <div class="row rectangle-strip">
         <div class="col-md-4 stat-column">
-            <div class="stat-number">150<span class="stat-plus">+</span></div>
+            <div class="stat-number" data-target="15000">150<span class="stat-plus">+</span></div>
             <div class="stat-label">Users</div>
         </div>
         <div class="col-md-4 stat-column">
-            <div class="stat-number">300<span class="stat-plus">+</span></div>
+            <div class="stat-number" data-target="30000">300<span class="stat-plus">+</span></div>
             <div class="stat-label">Projects</div>
         </div>
         <div class="col-md-4 stat-column">
-            <div class="stat-number">120<span class="stat-plus">+</span></div>
+            <div class="stat-number" data-target="12000">120<span class="stat-plus">+</span></div>
             <div class="stat-label">Clients</div>
         </div>
     </div>
@@ -607,6 +607,25 @@
     <!-- MDB -->
     <script type="text/javascript" src="js/mdb.umd.min.js"></script>
     <!-- Custom scripts -->
-    <script type="text/javascript"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+          const counters = document.querySelectorAll(".stat-number");
+          counters.forEach(counter => {
+              const updateCount = () => {
+                  const target = +counter.getAttribute("data-target");
+                  let count = +counter.textContent;
+                  const increment = target / 100;
+
+                  if (count < target) {
+                      counter.textContent = Math.ceil(count + increment);
+                      setTimeout(updateCount, 100);
+                  } else {
+                      counter.textContent = target + '+';
+                  }
+              };
+              updateCount();
+          });
+      });
+  </script>
   </body>
 </html>
