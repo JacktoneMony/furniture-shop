@@ -149,6 +149,9 @@
     flex-grow: 1;
   }
   
+  .nav-item{
+    margin-right: 50px;
+  }
 
   .star-rating {
     flex: 1;
