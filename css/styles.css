@@ -73,6 +73,10 @@
     border-radius: 20px;
   }
 
+  .page-footer{
+    background-color: rgb(24, 4, 97);
+  }
+
   .subscribe-box {
     background-color: #0066e0; /* Primary blue */
     padding: 40px;
