@@ -58,10 +58,19 @@
   border-right: none;
 }
 
-.stat-number {
+.stat-number-old {
   font-size: 2rem;
   font-weight: bold;
 }
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
 
 .stat-plus {
   font-size: 1.2rem;
