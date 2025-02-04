@@ -122,6 +122,40 @@
     border-radius: 20px;
   }
 
+  .avatar {
+    display: flex;
+    align-items:normal;
+    justify-content:space-between;
+    background-color: bisque;
+    min-width: 100%;
+  }
+
+  .avatar-card{
+    padding: 20px;
+    align-items: space-between;
+    background-color: #28a745;
+    border-radius: 30px;
+  }
+  
+  .name-stuff {
+    margin-left: 10px;
+  }
+
+
+  .star-rating {
+    flex: 1;
+    margin-left: 150px;
+  }
+  
+  .star-rating i {
+    margin-left: 5px;
+  }
+  
+  .content p {
+    font-size: 0.9rem; /* smaller font size */
+  }
+  
+
   .page-footer{
     background-color: rgb(24, 4, 97);
   }
