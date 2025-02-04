@@ -138,7 +138,7 @@
     border-radius: 15px;
     text-align: center;
     color: white;
-    max-width: 600px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -153,10 +153,18 @@
     border: none;
     border-radius: 50px;
     padding: 15px 20px;
-    height: 50px; /* Fixed height */
+    height: 50px !important; 
     flex: 1;
     outline: none;
     font-size: 16px;
+    /* background-color: red; */
+}
+
+/* Remove focus outline and prevent height shift */
+.subscribe-input:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
 }
 
 .subscribe-btn {
