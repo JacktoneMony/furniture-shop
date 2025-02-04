@@ -9,7 +9,11 @@
     color: black;
     /* background-color: blue; */
   }
+/* 
 
+  .center-stuff{
+    justify-content: space-between;
+  } */
   .hero-section {
     position: relative;
     min-height: 100vh;
@@ -141,6 +145,10 @@
     margin-left: 10px;
   }
 
+  .spacer{
+    flex-grow: 1;
+  }
+  
 
   .star-rating {
     flex: 1;
