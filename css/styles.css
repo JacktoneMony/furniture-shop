@@ -77,6 +77,13 @@
     background-color: rgb(24, 4, 97);
   }
 
+  .search-card{
+    background-color: aqua;
+    height: 70px;
+    border-radius: 40px;
+    align-items: center;
+  }
+
   .subscribe-box {
     background-color: #0066e0; /* Primary blue */
     padding: 40px;
