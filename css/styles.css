@@ -153,6 +153,35 @@
     margin-right: 50px;
   }
 
+  .box{
+  width: 100px; 
+  height: 100px;  
+  border: solid 5px #000;
+  border-color: #000 transparent transparent transparent;
+  border-radius: 50%/100px 100px 0 0;
+  }
+
+
+  .fancy-underline-text {
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+    overflow: hidden; /* Ensures the scaled underline stays contained */
+  }
+
+  .fancy-underline-text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Adjust positioning closer to text */
+    width: 100%;
+    height: 8px;
+    background: transparent;
+    border-bottom: 4px solid black;
+    border-radius: 0 0 40% 40% / 0 0 6px 6px; /* Curved bottom edge */
+    transform: scaleX(1.15); /* Subtle horizontal stretch */
+    transform-origin: center bottom; /* Ensures scaling from center */
+  }
   .star-rating {
     flex: 1;
     margin-left: 150px;
