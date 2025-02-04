@@ -43,6 +43,16 @@
     z-index: 1;
 }
 
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.stat-container {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
   .white-menu{
     color: white !important;
   }
@@ -55,6 +65,21 @@
 
     width: 100px;
     height: 100px;
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;  
+    border: 2px solid #000;
+  }
+
+  .round-icon-container-search{
+    background-color: aqua;
+    border-radius: 50%;
+    /* padding: 20px;
+    margin-top: 20px; */
+
+    width: 70px;
+    height: 70px;
     border-radius: 50%; 
     display: flex; 
     align-items: center; 
