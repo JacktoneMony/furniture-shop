@@ -4,7 +4,7 @@
   }
 
   .navbar {
-    background-color: #63a3f1; /* Primary blue */
+    background-color: #1b263b;
     color: azure;
   }
 
@@ -20,8 +20,9 @@
   }
 
   .btn-purple{
-    background-color: rgb(27, 21, 114);
-    color:white;
+    background-color: #778DA9;
+    color: #E0E1DD;
+    margin-left: 5px;
   }
 
   .btn-outline-purple{
@@ -66,7 +67,7 @@
     left: 0;
     width: 100%;
     height: 15%;
-    background-color: #0d6efd; /* Bootstrap primary color */
+    background-color: #778DA9;
     z-index: 1;
     padding-left: 100px; /*ntaeka media query*/
     color: white;
@@ -240,7 +241,7 @@
   
 
   .page-footer{
-    background-color: #0066e0; /* Primary blue */
+    background-color: #1b263b;
     color: white;
   }
 
@@ -252,7 +253,7 @@
     justify-content: center;
   }
   .subscribe-box {
-    background-color: #0066e0; /* Primary blue */
+    background-color: #1b263b;
     padding: 40px;
     border-radius: 15px;
     text-align: center;
