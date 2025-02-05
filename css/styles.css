@@ -20,8 +20,10 @@
   }
 
   .btn-purple{
-    background-color: #778DA9;
-    color: #E0E1DD;
+    /* background-color: #778DA9; */
+    background-color: #E0E1DD;
+    /* color: #E0E1DD; */
+    color:rgb(66, 62, 62);
     margin-left: 5px;
   }
 
