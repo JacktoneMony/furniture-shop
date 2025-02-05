@@ -128,6 +128,32 @@
   .min-height-column .card{
     min-height: 400px;
     /* background-color: #28a745; */
+
+  }
+
+  .min-height-column .hoverable {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .min-height-column .hoverable:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #0066e0;
+    color: white;
+  }
+  
+  .min-height-column .hoverable:active {
+    transform: scale(0.98);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .min-height-column .round-icon-container i {
+    transition: color 0.3s ease;
+  }
+  
+  .min-height-column .hoverable:hover .round-icon-container i {
+    color: #007bff !important; 
+
   }
   
   @media (min-width: 992px) { /* lg breakpoint */
